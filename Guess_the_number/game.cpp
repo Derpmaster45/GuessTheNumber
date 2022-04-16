@@ -10,11 +10,12 @@ int main ()
     
     // run the game until difficulty equals max difficulty
      PrintIntro();
+     int lifeCount=3;
     while(difficulty<=maxDifficulty)
     {
 
         std::cout<<"Round "<<difficulty<<std::endl;
-        PlayGame(difficulty);
+        PlayGame(difficulty,lifeCount);
         difficulty++;
 
         std::cin.ignore();
